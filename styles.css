@@ -17,7 +17,7 @@ body {
 #Todo-Container {
   /* border: 2px solid black; */
   height: auto;
-  width: 80%;
+  width: 70%;
   background: linear-gradient(180deg, #0a0a0a, #3a4452);
   box-shadow: inset 0px 0px 8px 8px rgb(30, 26, 26);
   margin-top: 5vh;
@@ -82,7 +82,7 @@ body {
 }
 
 #taking-input button i {
-  margin-left: 1vw;
+  margin-left: 0.5vw;
   cursor: pointer;
   transition: 1s ease-out;
 }
