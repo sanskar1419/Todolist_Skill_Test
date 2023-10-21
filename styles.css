@@ -17,7 +17,7 @@ body {
 #Todo-Container {
   /* border: 2px solid black; */
   height: auto;
-  width: 70%;
+  width: 60%;
   background: linear-gradient(180deg, #0a0a0a, #3a4452);
   box-shadow: inset 0px 0px 8px 8px rgb(30, 26, 26);
   margin-top: 5vh;
@@ -41,7 +41,7 @@ body {
   text-align: center;
   vertical-align: middle;
   font-family: "Courier New", Courier, monospace;
-  font-size: 6vw;
+  font-size: 4vw;
   color: #c19595;
   transition: 1s ease-in-out;
   cursor: pointer;
@@ -69,7 +69,7 @@ body {
 #taking-input i {
   color: rgb(174, 167, 167);
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 3%;
   font-size: 1.4rem;
   z-index: 1;
@@ -100,7 +100,7 @@ body {
 }
 
 #taking-input input {
-  padding-left: 10vw;
+  padding-left: 7vw;
   background: #1e2228;
   border-radius: 10px;
   font-weight: 600;
@@ -124,6 +124,7 @@ h5 {
   margin-top: -2px;
   color: rgb(174, 167, 167);
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
 #Blue-tick {
@@ -250,4 +251,98 @@ h5.footer-heading {
 
 .Completed-button:hover {
   color: #0079bf;
+}
+
+/* Adding Media queries to look website better */
+@media screen and (max-width: 900px) {
+  #Todo-Container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Todo-Container {
+    width: 75%;
+  }
+  #taking-input i {
+    font-size: 1.3rem;
+    top: 15%;
+  }
+
+  #taking-input button {
+    top: 17%;
+  }
+
+  #taking-input input {
+    padding-left: 8vw;
+  }
+  #taking-input button i {
+    margin-left: 0.8vw;
+  }
+
+  .add-task {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  #list label {
+    font-size: 1rem;
+  }
+
+  #list label:before {
+    padding: 9px;
+  }
+  #list input:checked + label:after {
+    top: 1.3px;
+    left: 6px;
+    width: 6px;
+    height: 11px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #Todo-Container {
+    width: 90%;
+  }
+  #taking-input i {
+    font-size: 1.1rem;
+  }
+
+  #taking-input button {
+    top: 20%;
+  }
+
+  #taking-input input {
+    padding-left: 11vw;
+  }
+  #taking-input button i {
+    margin-left: 1vw;
+  }
+
+  .add-task {
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  h5 {
+    font-size: 0.7rem;
+  }
+
+  #list label {
+    font-size: 0.8rem;
+  }
+
+  #list label:before {
+    padding: 8px;
+  }
+  #list input:checked + label:after {
+    top: 1.1px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+  }
 }
