@@ -1,0 +1,253 @@
+/* Appling Style to Body Tag*/
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #0a0a0a, #3a4452);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Appling Styles to todo container*/
+#Todo-Container {
+  /* border: 2px solid black; */
+  height: auto;
+  width: 80%;
+  background: linear-gradient(180deg, #0a0a0a, #3a4452);
+  box-shadow: inset 0px 0px 8px 8px rgb(30, 26, 26);
+  margin-top: 5vh;
+  border-radius: 25px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* Appling Style to the Todo Heading and Container for the app */
+#Todo-heading {
+  /* border: 2px solid black; */
+  background-color: #272b31;
+  width: 80%;
+  margin: 3vh auto;
+  border-radius: 10pc;
+  box-shadow: inset 0px 0px 8px 8px rgb(30, 26, 26);
+}
+
+#Todo-heading h1 {
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 6vw;
+  color: #c19595;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+#Todo-heading h1:hover {
+  transform: scale(1.2);
+}
+
+/* Appling Style to Input and Todo list container */
+#container {
+  border: 2px solid black;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  box-shadow: 0px 0px 8px 8px rgb(30, 26, 26);
+  border-radius: 20px;
+  margin-bottom: 10vh;
+}
+
+/* Styling for input space */
+#taking-input {
+  position: relative;
+}
+#taking-input i {
+  color: rgb(174, 167, 167);
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  font-size: 1.4rem;
+  z-index: 1;
+}
+#taking-input button {
+  position: absolute;
+  background: transparent;
+  border: transparent;
+  top: 20%;
+}
+
+#taking-input button i {
+  margin-left: 1vw;
+  cursor: pointer;
+  transition: 1s ease-out;
+}
+
+#taking-input button i:hover {
+  color: #0079bf;
+  transform: scale(1.1);
+}
+.add-task {
+  width: 93%;
+  outline: none;
+  font-size: 15px;
+  padding: 11px;
+  margin-bottom: 3px;
+}
+
+#taking-input input {
+  padding-left: 10vw;
+  background: #1e2228;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 2px solid rgb(23, 20, 20);
+  caret-color: #f2f2f2;
+  transition: 1s;
+  margin-bottom: 2vh;
+  color: rgb(174, 167, 167);
+  box-shadow: inset 0px 8px 8px rgb(35, 28, 28);
+  /* outline-color: red;
+  outline-offset: 5px; */
+}
+#taking-input input:active {
+  transform: translate(4px, 4px);
+}
+
+/* Styling for All task indicator and Clear All */
+h5 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2px;
+  color: rgb(174, 167, 167);
+  cursor: pointer;
+}
+
+#Blue-tick {
+  transition: 1s ease-in-out;
+}
+
+.Clear-All:hover {
+  color: #0079bf;
+  transform: scale(1.05);
+}
+
+/* Styling for List Items */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #e5e5e5; */
+}
+ul li {
+  padding: 10px;
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+  background-color: #282d34;
+  border-radius: 15px;
+  box-shadow: inset 0 0 4px 4px #1d2023;
+  transition: 1s ease-in;
+  margin-bottom: 5px;
+}
+ul li:hover {
+  background: rgb(99, 91, 91);
+  transform: scale(1.05);
+}
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+  color: rgb(174, 167, 167);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+#list label:before {
+  content: "";
+  /* -webkit-appearance: none; */
+  background-color: transparent;
+  border: 2px solid rgb(174, 167, 167);
+  box-shadow: 0 1px 2px rgba(128, 109, 109, 0.05),
+    inset 0px -15px 10px -12px rgba(52, 47, 47, 0.05);
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 1px ease-in-out;
+}
+#list input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #0079bf;
+  transform: scale(1.05);
+}
+#list input:checked + label {
+  text-decoration: line-through;
+  color: #0079bf;
+}
+#Delete-icon {
+  height: 28px;
+  margin-right: 5px;
+  padding: 5px 0px;
+  border-radius: 3px;
+  color: rgb(174, 167, 167);
+  transition: 0.5s ease-in-out;
+}
+#Delete-icon:hover {
+  color: black;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+/* Styles for total task and filter(all , uncomplete and Complete*/
+h5.footer-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -2px;
+  color: rgb(174, 167, 167);
+  /* padding: 2px; */
+  cursor: pointer;
+}
+
+.All-Task-button:hover {
+  color: #0079bf;
+}
+
+.All-Task-button:hover {
+  color: #0079bf;
+}
+
+.Uncompleted-button:hover {
+  color: #0079bf;
+}
+
+.Completed-button:hover {
+  color: #0079bf;
+}

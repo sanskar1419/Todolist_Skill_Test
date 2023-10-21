@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List By Sanskar Gupta</title>
+    <!-- Linking font awesome to add icon-->
+    <script
+      src="https://kit.fontawesome.com/acf3eaf7bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Linking Css file to apply style -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Container for heading and task -->
+    <div id="Todo-Container">
+      <!-- Container for heading -->
+      <header>
+        <div id="Todo-heading">
+          <h1>Todo List App</h1>
+        </div>
+      </header>
+
+      <main>
+        <!-- Container for task Input and list of Todo -->
+        <div id="container">
+          <!-- Container for taking Input -->
+          <div id="taking-input">
+            <i class="fa-regular fa-rectangle-list"></i>
+            <input
+              placeholder="Add a task"
+              class="add-task"
+              id="add"
+              data-helloWord="asdasdas"
+            />
+            <button type="submit" class="add-button">
+              <i class="fa-solid fa-circle-plus" id="btn-add"></i>
+            </button>
+          </div>
+
+          <!-- Adding All task completed indicator and Clear all Button -->
+          <h5>
+            <span class="All-task" id="Blue-tick"
+              ><i class="fa-solid fa-check-double"></i>All Task Completed
+            </span>
+            <span class="Clear-All" id="clear">Clear All</span>
+          </h5>
+
+          <!-- Adding horizontal row to before list -->
+          <hr />
+
+          <!-- Start of todo List -->
+          <ul id="list">
+            <!-- list item added in Java Script -->
+          </ul>
+
+          <!-- Adding horizontal row to After list -->
+          <hr />
+
+          <!-- Adding filter button for All , Uncomplete and Complete -->
+          <!-- Adding Total task counter -->
+          <h5 class="footer-heading">
+            <span id="total-tasks"
+              >Total tasks: <span id="tasks-counter">0</span></span
+            >
+            <span
+              ><span class="All-Task-button" id="all-menu"> All </span
+              ><span class="Uncompleted-button"> Uncompleted </span
+              ><span class="Completed-button"> Completed </span></span
+            >
+          </h5>
+        </div>
+      </main>
+    </div>
+
+    <!-- Linking Java Script file with the html script -->
+    <script src="todo.js"></script>
+  </body>
+</html>
