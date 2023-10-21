@@ -41,7 +41,7 @@ body {
   text-align: center;
   vertical-align: middle;
   font-family: "Courier New", Courier, monospace;
-  font-size: 4vw;
+  font-size: 5vw;
   color: #c19595;
   transition: 1s ease-in-out;
   cursor: pointer;
@@ -264,6 +264,10 @@ h5.footer-heading {
   #Todo-Container {
     width: 75%;
   }
+
+  #Todo-heading h1 {
+    font-size: 5.5vw;
+  }
   #taking-input i {
     font-size: 1.3rem;
     top: 15%;
@@ -307,6 +311,9 @@ h5.footer-heading {
 @media screen and (max-width: 400px) {
   #Todo-Container {
     width: 90%;
+  }
+  #Todo-heading h1 {
+    font-size: 7vw;
   }
   #taking-input i {
     font-size: 1.1rem;
